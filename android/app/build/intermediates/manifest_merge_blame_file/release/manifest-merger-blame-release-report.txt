@@ -1,0 +1,228 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mobiezy.salescalllog"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:2:5-78
+11-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:2:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:3:5-80
+12-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:3:22-78
+13    <!--
+14         Required to query activities that can process text, see:
+15         https://developer.android.com/training/package-visibility?hl=en and
+16         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+17
+18         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+19    -->
+20    <queries>
+20-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:42:5-47:15
+21        <intent>
+21-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:43:9-46:18
+22            <action android:name="android.intent.action.PROCESS_TEXT" />
+22-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:44:13-72
+22-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:44:21-70
+23
+24            <data android:mimeType="text/plain" />
+24-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:45:13-50
+24-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:45:19-48
+25        </intent>
+26    </queries>
+27
+28    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+28-->[:call_log] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\call_log-4.0.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-72
+28-->[:call_log] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\call_log-4.0.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-69
+29    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+29-->[:call_log] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\call_log-4.0.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-75
+29-->[:call_log] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\call_log-4.0.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-72
+30    <uses-permission android:name="android.permission.CALL_PHONE" />
+30-->[:flutter_phone_direct_caller] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-69
+30-->[:flutter_phone_direct_caller] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-66
+31
+32    <uses-feature
+32-->[:flutter_phone_direct_caller] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-13:36
+33        android:name="android.hardware.telephony"
+33-->[:flutter_phone_direct_caller] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-50
+34        android:required="false" />
+34-->[:flutter_phone_direct_caller] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_phone_direct_caller-2.1.1\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-33
+35
+36    <permission
+36-->[androidx.core:core:1.13.0] C:\Users\susha\.gradle\caches\transforms-3\fd0398014a5374dc41633efa4ef1bdaf\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+37        android:name="com.mobiezy.salescalllog.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+37-->[androidx.core:core:1.13.0] C:\Users\susha\.gradle\caches\transforms-3\fd0398014a5374dc41633efa4ef1bdaf\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+38        android:protectionLevel="signature" />
+38-->[androidx.core:core:1.13.0] C:\Users\susha\.gradle\caches\transforms-3\fd0398014a5374dc41633efa4ef1bdaf\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+39
+40    <uses-permission android:name="com.mobiezy.salescalllog.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+40-->[androidx.core:core:1.13.0] C:\Users\susha\.gradle\caches\transforms-3\fd0398014a5374dc41633efa4ef1bdaf\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+40-->[androidx.core:core:1.13.0] C:\Users\susha\.gradle\caches\transforms-3\fd0398014a5374dc41633efa4ef1bdaf\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+41
+42    <application
+43        android:name="android.app.Application"
+43-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:6:9-42
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.13.0] C:\Users\susha\.gradle\caches\transforms-3\fd0398014a5374dc41633efa4ef1bdaf\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+45        android:enableOnBackInvokedCallback="true"
+45-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:8:13-55
+46        android:icon="@mipmap/logo"
+46-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:7:9-36
+47        android:label="Mobiezy_call"
+47-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:5:9-37
+48        android:networkSecurityConfig="@xml/network_security_config" >
+48-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:9:14-74
+49        <activity
+49-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:10:9-30:20
+50            android:name="com.mobiezy.salescalllog.MainActivity"
+50-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:11:13-41
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+51-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:15:13-163
+52            android:exported="true"
+52-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:12:13-36
+53            android:hardwareAccelerated="true"
+53-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:16:13-47
+54            android:launchMode="singleTop"
+54-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:13:13-43
+55            android:theme="@style/LaunchTheme"
+55-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:14:13-47
+56            android:windowSoftInputMode="adjustResize" >
+56-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:17:13-55
+57
+58            <!--
+59                 Specifies an Android theme to apply to this Activity as soon as
+60                 the Android process has started. This theme is visible to the user
+61                 while the Flutter UI initializes. After that, this theme continues
+62                 to determine the Window background behind the Flutter UI.
+63            -->
+64            <meta-data
+64-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:22:13-25:17
+65                android:name="io.flutter.embedding.android.NormalTheme"
+65-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:23:15-70
+66                android:resource="@style/NormalTheme" />
+66-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:24:15-52
+67
+68            <intent-filter>
+68-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:26:13-29:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:27:17-68
+69-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:27:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:28:17-76
+71-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:28:27-74
+72            </intent-filter>
+73        </activity>
+74        <!--
+75             Don't delete the meta-data below.
+76             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+77        -->
+78        <meta-data
+78-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:33:9-35:33
+79            android:name="flutterEmbedding"
+79-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:34:13-44
+80            android:value="2" />
+80-->D:\Mobiezy\call_logs_flutter\android\app\src\main\AndroidManifest.xml:35:13-30
+81
+82        <service
+82-->[:geolocator_android] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
+83            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+83-->[:geolocator_android] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+84            android:enabled="true"
+84-->[:geolocator_android] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
+85            android:exported="false"
+85-->[:geolocator_android] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+86            android:foregroundServiceType="location" />
+86-->[:geolocator_android] C:\Users\susha\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.0\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
+87
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\susha\.gradle\caches\transforms-3\4f86f4c61b99618f34b2dcd4061fd4e1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+89            android:name="androidx.window.extensions"
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\susha\.gradle\caches\transforms-3\4f86f4c61b99618f34b2dcd4061fd4e1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\susha\.gradle\caches\transforms-3\4f86f4c61b99618f34b2dcd4061fd4e1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+91        <uses-library
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\susha\.gradle\caches\transforms-3\4f86f4c61b99618f34b2dcd4061fd4e1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+92            android:name="androidx.window.sidecar"
+92-->[androidx.window:window:1.0.0-beta04] C:\Users\susha\.gradle\caches\transforms-3\4f86f4c61b99618f34b2dcd4061fd4e1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0-beta04] C:\Users\susha\.gradle\caches\transforms-3\4f86f4c61b99618f34b2dcd4061fd4e1\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+94
+95        <activity
+95-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\e2b75c668ee6ed43f4451593c0411cae\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+96-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\e2b75c668ee6ed43f4451593c0411cae\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\e2b75c668ee6ed43f4451593c0411cae\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+98-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\e2b75c668ee6ed43f4451593c0411cae\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+99
+100        <meta-data
+100-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\40a6846c66df7cef3336541a280cfdef\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+101            android:name="com.google.android.gms.version"
+101-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\40a6846c66df7cef3336541a280cfdef\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+102            android:value="@integer/google_play_services_version" />
+102-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\susha\.gradle\caches\transforms-3\40a6846c66df7cef3336541a280cfdef\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+103
+104        <provider
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+105            android:name="androidx.startup.InitializationProvider"
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+106            android:authorities="com.mobiezy.salescalllog.androidx-startup"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+107            android:exported="false" >
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+108            <meta-data
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+110                android:value="androidx.startup" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+111        </provider>
+112
+113        <receiver
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+114            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+115            android:directBootAware="false"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+116            android:enabled="true"
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+117            android:exported="true"
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+118            android:permission="android.permission.DUMP" >
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+120                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+123                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+124            </intent-filter>
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+126                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+129                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\susha\.gradle\caches\transforms-3\dddef4c9e8c51fa57418b8550cd69c59\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+130            </intent-filter>
+131        </receiver>
+132    </application>
+133
+134</manifest>
