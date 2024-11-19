@@ -30,9 +30,7 @@ class _DisplayTodayCallsState extends State<DisplayTodayCalls> {
       isLoading = true;
     });
 
-    var body = json.encode({
-      'p_blockType': '13',
-      'L_Name': widget.loggedInUserName,
+    var body = json.encode({,
     });
     var response = await fetch(body);
     print(response.body);
