@@ -80,10 +80,6 @@ class _GeoLocatorState extends State<GeoLocator> {
       });
 
       var body = json.encode({
-        'p_blockType': '9',
-        'v_start_place': column == 'start_place' ? coordinates : '',
-        'v_end_place': column == 'end_place' ? coordinates : '',
-        'L_Name': widget.loggedInUserName,
       });
       var response = await fetch(body);
       print(response.body);
@@ -92,7 +88,6 @@ class _GeoLocatorState extends State<GeoLocator> {
         setState(() {
           _isLoading = false;
           _errorMessage = '';
-          _isStartLocationSet = column == 'start_place' ? true : false;
         });
       } else {
         setState(() {
