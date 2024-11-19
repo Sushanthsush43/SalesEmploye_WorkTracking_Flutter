@@ -45,12 +45,7 @@ class _LeadDetailsPageState extends State<LeadDetailsPage> {
     final callStartDatetime = DateTime.now().toString();
     final callerName = callDetailsList.callerName;
     final receiverName = callDetailsList.receiverName;
-    var body = jsonEncode({
-      'p_blockType': '7',
-      'L_Name': callerName,
-      'v_call_Recivername': receiverName,
-      'p_call_start_datetime': callStartDatetime,
-    });
+    var body = jsonEncode({    });
 
     try {
       var response = await fetch(body);
