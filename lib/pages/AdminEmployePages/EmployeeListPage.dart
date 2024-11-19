@@ -26,7 +26,7 @@ class _OperatorListState extends State<OperatorList> {
   }
 
   Future<void> _fetchUserList() async {
-    var body = json.encode({"p_blockType": '10'});
+    var body = json.encode({});
     try {
       var response = await fetch(body);
       if (response.statusCode == 200) {
