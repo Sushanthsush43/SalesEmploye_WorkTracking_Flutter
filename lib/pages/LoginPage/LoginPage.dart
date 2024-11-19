@@ -26,9 +26,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> _checkLoggedInStatus() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? isLoggedIn = prefs.getString('isLoggedIn');
-    String? loggedInUserName = prefs.getString('loggedInUserName');
-    String? roleId = prefs.getString('roleId');
+    String? isLoggedIn = prefs.getString('');
+    String? loggedInUserName = prefs.getString('');
+    String? roleId = prefs.getString('');
     if (isLoggedIn == 'true' && loggedInUserName != null && roleId != null) {
       // Navigate to the appropriate page based on role ID
       if (roleId == 'Admin') {
@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
     String login_id = _loginIdController.text;
     String password = _passwordController.text;
 
-    var body = json.encode({'login_id': login_id, 'password': password});
+    var body = json.encode({});
 
     try {
       var response = await fetchLogin(body);
@@ -75,13 +75,13 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (response.statusCode == 200) {
         var responseBody = json.decode(response.body);
-        if (responseBody['p_user_role'] != null &&
-            responseBody['L_Name'] != null) {
+        if (responseBody[''] != null &&
+            responseBody[''] != null) {
           // Save login details to shared preferences
           SharedPreferences prefs = await SharedPreferences.getInstance();
-          prefs.setString('isLoggedIn', 'true');
-          prefs.setString('loggedInUserName', responseBody['L_Name']);
-          prefs.setString('roleId', responseBody['p_user_role']);
+          prefs.setString('', 'true');
+          prefs.setString('', responseBody['L_Name']);
+          prefs.setString('', responseBody['p_user_role']);
 
           String roleId = responseBody['p_user_role'];
 
