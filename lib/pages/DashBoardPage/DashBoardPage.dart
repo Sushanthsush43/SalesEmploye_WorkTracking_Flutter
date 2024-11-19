@@ -97,7 +97,7 @@ class _CallDashBoard extends State<CallDashBoard> {
 //Fetching the lead status details
   Future<void> fetchDataAndUpdateCounts() async {
     var body =
-        json.encode({'p_blockType': '5', 'L_Name': widget.loggedInUserName});
+        json.encode({});
     try {
       await TotalCallCount();
 
@@ -132,7 +132,7 @@ class _CallDashBoard extends State<CallDashBoard> {
 //Location display in admin page part
   Future<void> _getLocationDisplay() async {
     var body =
-        json.encode({"p_blockType": '11', 'L_Name': widget.loggedInUserName});
+        json.encode({});
     try {
       var response = await fetch(body);
       if (response.statusCode == 200) {
@@ -240,12 +240,7 @@ class _CallDashBoard extends State<CallDashBoard> {
         _isLoading = true;
       });
 
-      var body = json.encode({
-        'p_blockType': '9',
-        'v_start_place': column == 'start_place' ? place : '',
-        'v_end_place': column == 'end_place' ? place : '',
-        'L_Name': widget.loggedInUserName,
-      });
+      var body = json.encode({      });
       var response = await fetch(body); // Update with your API call method
       print(response.body);
 
@@ -286,21 +281,14 @@ class _CallDashBoard extends State<CallDashBoard> {
       isActionInProgress = true;
     });
 
-    var body = json.encode({
-      'p_blockType': '6',
-      'L_Name': widget.loggedInUserName,
-      'v_lead_status': status,
-    });
+    var body = json.encode({    });
     try {
       var response = await fetch(body);
       if (response.statusCode == 200) {
         final jsonData = json.decode(response.body);
         final dataList = jsonData['Data'];
         final details = dataList
-            .map<Map<String, dynamic>>((item) => {
-                  'name': item['name'],
-                  'phone': item['phone'],
-                  'state': item['state']
+            .map<Map<String, dynamic>>((item) => {(
                 })
             .toList();
         setState(() {
@@ -364,7 +352,7 @@ class _CallDashBoard extends State<CallDashBoard> {
   Future<void> TotalCallCount() async {
     print("textToDisplay");
     var body =
-        json.encode({'p_blockType': '12', 'L_Name': widget.loggedInUserName});
+        json.encode({});
     try {
       var response = await fetch(body);
       print(json.decode((response.statusCode).toString()));
@@ -1419,7 +1407,7 @@ class _CallDashBoard extends State<CallDashBoard> {
                                                                       ),
                                                                       subtitle:
                                                                           Text(
-                                                                        'Duration: $formattedDuration',
+                                                                        '',
                                                                         style: GoogleFonts.openSans(
                                                                             color: Color.fromARGB(
                                                                           255,
