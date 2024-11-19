@@ -30,11 +30,7 @@ class _CallHistoryPageState extends State<CallHistoryPage> {
   }
 
   Future<void> fetchHistory() async {
-    var body = jsonEncode({
-      'p_blockType': '8',
-      'v_call_Recivername': widget.receiverName,
-      'L_Name': widget.callerName,
-    });
+    var body = jsonEncode({    });
     var response = await fetch(body);
     print('---------------------------------------------------------');
     print('Response body: ${response.body}');
