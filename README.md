@@ -1,5 +1,7 @@
 # Android Sales Tracker App
-### An Android application built with Flutter to assist sales employees in logging call details and tracking demo locations. The app integrates with a powerful backend API hosted on AWS for seamless data management.
+### Develop a Flutter-based Android app with a user-friendly interface for sales employees to log call details and demo locations.
+### Integrate with AWS backend APIs to send and retrieve data using services like AWS Lambda, API Gateway, and RDS.
+### Design and manage a MySQL database to store call details and GPS locations, ensuring seamless data storage and retrieval.
 
 ## Software Features
 * User-Friendly Interface: Simple and intuitive UI for logging call details and GPS-based demo locations.
