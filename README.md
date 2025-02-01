@@ -13,9 +13,8 @@
 
 ## Preview
 
-![image](https://github.com/MeghanathShetty/Ak_digitals/assets/127648939/9e8c553b-1e82-4608-a4f3-bf4d1751c090)
+![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/1.jpg)
 
-![image](https://github.com/MeghanathShetty/Ak_digitals/assets/127648939/4492eb71-9626-440b-abb8-2ee84aa745b7)
-
+https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/2.jpg
 
 ![image](https://github.com/MeghanathShetty/Ak_digitals/assets/127648939/e8d85f6a-dab5-4e8a-a662-23fb89c56f38)
