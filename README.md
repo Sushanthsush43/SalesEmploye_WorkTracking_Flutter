@@ -14,23 +14,18 @@
 ## Preview
 
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/1.jpg)
-
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/2.jpg)
 
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/3.jpg)
-
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/4.jpg)
 
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/0.jpg)
-
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/00.jpg)
 
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/22.jpg)
-
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/44.jpg)
 
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/66.jpg)
-
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/88.jpg)
 
 ![image](https://github.com/Sushanthsush43/SalesEmploye_WorkTracking_Flutter/blob/main/assets/99.jpg)
