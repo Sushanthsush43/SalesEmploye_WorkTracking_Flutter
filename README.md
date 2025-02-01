@@ -1,4 +1,4 @@
-# Android Sales Tracker App
+# Flutter Sales Employee Tracker App
 ### Develop a Flutter-based Android app with a user-friendly interface for sales employees to log call details and demo locations.
 ### Integrate with AWS backend APIs to send and retrieve data using services like AWS Lambda, API Gateway, and RDS.
 ### Design and manage a MySQL database to store call details and GPS locations, ensuring seamless data storage and retrieval.
